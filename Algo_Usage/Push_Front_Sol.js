@@ -10,4 +10,4 @@ function ManualUnshift(arr) {
 };
 console.log(arr);
 
-//expected output from ManualUnshift [1,2,3,4,5]
+//expected output from ManualUnshift [1,2,3,4,]
