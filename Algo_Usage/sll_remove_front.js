@@ -1,5 +1,6 @@
-//Task is Write a method to return the value (not the node) at the head of 
-//the list. If the list is empty, return null.
+// Write a method to remove the head node and return the new list head node. 
+// If the list is empty, return null.
+
 class Node {
     constructor(value){
         this.value = value;
@@ -17,6 +18,13 @@ class SLL {
         }
         return this.head.val;
     }
+    removeFront() {
+        if (this.head == null){
+            return null
+        }
+        this.head = this.head.next;
+        return this.head;
+
 }
 
 sll1 = new SLL()
@@ -25,3 +33,5 @@ node2 = new Node(12)
 
 sll1.head = node1; //starts the linked list with 'head'
 node1.next = node2; //this connects the nodes
+
+sll1.removeFront();

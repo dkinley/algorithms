@@ -20,3 +20,8 @@ class SLL {
 }
 
 sll1 = new SLL()
+node1 = new Node(8)
+node2 = new Node(12)
+
+sll1.head = node1; //starts the linked list with 'head'
+node1.next = node2; //this connects the nodes
