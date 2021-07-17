@@ -4,16 +4,14 @@
 //use a second array – move values within the array that you are given. As always, 
 //do not use built-in array functions such as splice().copy
 
-arr = [1, 2, 3, 4, 5, 6];
+arr = [9, 10, 11, 12, 13];
 
 function Reverse(arr)
 {
-    for (var i = 0; i <= arr.length-1; i++ ) {
-            // set target location to temp
-            var temp = arr[arr.length-i];
-            // set  i = target location of arr.length-i
-            arr[i] = arr.length-i;
-            arr[arr.length-i] = i;
+    for (var i = 0; i <= (arr.length-1)/2; i++ ) {
+            var temp = arr[i]; // set the temp variable to = the iterated value, [i]
+            arr[i] = arr[arr.length-i-1]; // set the interated value [i] to now = last value
+            arr[arr.length-i-1] = temp // now set the last value to = temp value
     }
     console.log(arr);
 
