@@ -7,7 +7,7 @@ arr1 = [0, 1];
 arr2 = [2, 3];
 arr3 = [];
 
-function concat(arr1, arr2, arr3)
+function concat(arr1, arr2)
 {
     for (var i = 0; i <= arr1.length-1; i++) {
             var temp = arr1[i];

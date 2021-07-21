@@ -5,27 +5,34 @@
 //X Fourth: minimize the touches of each element.copy
 
 arr = [0, 1, 2, 3, 4];
-count = 1
-shiftBy = 1
+shiftBy = 2
 
-function rotateArr(arr, shiftBy)
-{
-        for (var i = 0; i <= arr.length-2; i++ )
-            {
-            var temp = arr[arr.length-1]; //4
-            arr[i] = arr[i+1]; //shifting
-            arr[0] = temp // first value is set to temp
-            }
-    
-    console.log(arr);
-
+function shift(arr, shiftBy) {
+    for (var x = 1; x <= shiftBy; x++ );
+    {
+        return rotateArr(arr);
+    }
 };
+
+function rotateArr(arr)
+    {
+            var temp = arr[arr.length-1]; //4
+            for (var i = arr.length-1; i >= 1; i-- )
+                {
+                arr[i] = arr[i-1]; //shifting
+                }
+                arr[0] = temp
+        
+        return(arr)
+    };
 
 //Nested for loop
 //take itme at end into temp
 //for loop and set arr[i+1] = arr[i]
 // [1,2,3] -> [1,1,2]
 // arr[0] = temp
+
+//shift(arr, shiftBy);
 console.log(arr);
-rotateArr(arr, shiftBy);
+console.log(shift(arr, shiftBy));
 
