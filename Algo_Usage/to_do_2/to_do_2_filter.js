@@ -10,9 +10,7 @@ max = min+3
 function filter(arr)
 {
     for (var i = 0; i <= arr.length-1; i++ ) {
-            var temp = arr[i]; //10
-            arr[i] = arr[arr.length-i-1]; //13 in index 1
-            arr[arr.length-i-1] = temp // temp set to 10
+            if // set if statement so that if the value falls below then set to min, if above then set to max
     }
     console.log(arr);
 
