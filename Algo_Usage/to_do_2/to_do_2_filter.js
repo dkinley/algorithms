@@ -3,18 +3,28 @@
 // retain only the array values between min and max. Work in-place: return the array 
 // you are given, with values in original order. No built-in array functions.
 
-arr = [0, 1, 2, 3, 4];
-min = 0
+arr = [0, 1, 2, 3, 4, 5, 6, 7];
+min = 2
 max = min+3
 
-function filter(arr)
+function filter(arr, min, max)
 {
     for (var i = 0; i <= arr.length-1; i++ ) {
-            if // set if statement so that if the value falls below then set to min, if above then set to max
+            // set if statement so that if the value falls below then set to min, if above then set to max
+            if (arr[i] < min) {
+                arr[i] = min
+            }
+        }
+
+    for (var i = 0; i <= arr.length-1; i++ ) {
+        // set if statement so that if the value falls below then set to min, if above then set to max
+        if (arr[i] > max) {
+            arr[i] = max
+        }
     }
+
     console.log(arr);
 
 };
 
-console.log(arr);
-filter(arr);
+filter(arr, min, max);

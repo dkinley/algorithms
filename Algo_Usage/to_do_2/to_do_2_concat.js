@@ -7,15 +7,13 @@ arr1 = [0, 1];
 arr2 = [2, 3];
 arr3 = [];
 
-function concat(arr1, arr2)
+function concat(arr1, arr2, arr3)
 {
     for (var i = 0; i <= arr1.length-1; i++) {
-            var temp = arr1[i];
-            arr3[i] = temp;
+        arr3[i] = arr1[i];
+        arr[(arr1.length-1)+1] = arr2[i] 
         }
-    console.log(arr3);
-
+        return arr3;    
 };
 
-console.log(arr3);
-concat(arr3);
+console.log(concat(arr1, arr2, arr3));
